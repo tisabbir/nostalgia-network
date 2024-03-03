@@ -12,6 +12,10 @@ const search = () => {
           const data = await response.json();
          let posts = data.posts;
 
+         if(posts.length === 0){
+            alert('please enter a valid category');
+            return;
+         }
 
         const discussionContainer = document.getElementById("discussion-container");
         posts.forEach((post) => {
