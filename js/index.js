@@ -10,6 +10,10 @@ const getData = async (loadPosts, checkActive) => {
 };
 
 const loadPosts = () => {
+
+    const loader = document.getElementById('loader');
+          loader.classList.remove('hidden')
+
   const discussionContainer = document.getElementById("discussion-container");
   posts.forEach((post) => {
     let discussion = document.createElement("div");
@@ -36,7 +40,7 @@ const loadPosts = () => {
                                 <p>${post.posted_time}</p>
                                 </div>
                     
-                                    <i onclick="msgBtnHandler()" class="fa-solid fa-square-envelope w-8 btn bg-green-400 p-2 rounded-full"></i>
+                                    <i id="msgBtn" onclick="msgBtnHandler()" class="fa-solid fa-square-envelope w-8 btn bg-green-400 p-2 rounded-full"></i>
                                 
                             </div>
                         </div>
@@ -44,6 +48,9 @@ const loadPosts = () => {
         `;
 
     discussionContainer.appendChild(discussion);
+    setTimeout(()=>{
+        loader.classList.add('hidden')
+      },2000)
   });
 };
 
@@ -96,5 +103,7 @@ const msgBtnHandler=()=>{
 
     count++;
     markAsRead.innerText = count;
-    
+    const msgBtn = event.target;
+    console.log(msgBtn)
+    msgBtn.setAttribute('disabled','true')
 }

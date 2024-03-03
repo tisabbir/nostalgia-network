@@ -110,10 +110,9 @@
       <!-- Banner Section Starts -->
 
       <div
-        class="hero h-[400px] rounded-3xl"
-        style="background-image: url(images/bgbanner.png)"
+        class="hero rounded-3xl"
+        style="background-image: url(images/bg-banner.png)"
       >
-        <div class="hero-overlay bg-[#12132D] bg-opacity-60 rounded-3xl"></div>
         <div
           id="banner-content-container"
           class="flex flex-col lg:flex-row w-full p-4 lg:p-24 gap-12"
@@ -133,7 +132,7 @@
               <input id="input-field"
                 type="text"
                 class="grow"
-                placeholder="Search here anything"
+                placeholder="Search By Category"
               />
               <button onclick="search()"
                 class="btn btn-primary bg-[#797DFC] border-none text-white font-bold text-xl px-6 rounded-full"
@@ -176,6 +175,14 @@
           conversation today!
         </p>
 
+        <!-- Loader  -->
+        <div id="loader" class="text-center hidden">
+            <span class="loading loading-ball loading-xs"></span>
+<span class="loading loading-ball loading-sm"></span>
+<span class="loading loading-ball loading-md"></span>
+<span class="loading loading-ball loading-lg"></span>
+        </div>
+        <!-- Loader e -->
         <div class="mt-12 flex flex-col lg:flex-row gap-6">
           <div id="discussion-container" class="space-y-4 flex-1">
             <!-- <div id="discussion" class="flex gap-6 bg-[#F3F3F5] p-3 lg:p-10 rounded-xl">

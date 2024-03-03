@@ -2,6 +2,9 @@ const inputField = document.getElementById('input-field');
 
 
 const search = () => {
+
+    const loader = document.getElementById('loader');
+          loader.classList.remove('hidden')
     const inputValue = inputField.value
     console.log(inputValue);
 
@@ -51,6 +54,9 @@ const search = () => {
               `;
       
           discussionContainer.appendChild(discussion);
+          setTimeout(()=>{
+            loader.classList.add('hidden')
+          },2000)
           
         });
         checkActive(posts);
