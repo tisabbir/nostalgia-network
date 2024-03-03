@@ -22,12 +22,12 @@
   <body>
     <header>
         <!-- nav section starts -->
-        <nav class="container mx-auto">
-            <div class="navbar bg-base-100 flex justify-between">
+        <nav class="container mx-auto w-[95%] mt-8">
+            <div class="navbar bg-base-100 flex justify-between items-center">
                 <!-- burger icon start -->
                 <div class="navbar-start inline-block lg:hidden">
                     <div class="dropdown">
-                      <div tabindex="0" role="button" class="btn btn-ghost btn-circle">
+                      <div tabindex="0" role="button" class="btn btn-ghost btn-circle tooltip" data-tip="menu">
                         <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h7" /></svg>
                       </div>
                       <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
@@ -42,27 +42,27 @@
                 <!-- burger icon ends -->
                 <!-- nostalgia -->
                 <div class="">
-                    <a class="btn btn-ghost text-xl">Nostalgia Network</a>
+                    <a class="btn btn-ghost text-xl lg:text-4xl text-[#12132D] font-extrabold">Nostalgia Network</a>
                 </div>
                 <!-- nostalgia -->
 
                 <div class="space-x-4">
                     <div id="btn-container" class="hidden lg:inline-block">
-                        <button class="btn btn-ghost btn-circle">
+                        <button class="btn btn-ghost btn-circle tooltip" data-tip="Home">
                           <i class="fa-solid fa-house"></i>
                         </button>
-                        <button class="btn btn-ghost btn-circle">
+                        <button class="btn btn-ghost btn-circle tooltip" data-tip="Post">
                               <i class="fa-solid fa-pencil"></i>
                         </button>
-                        <button class="btn btn-ghost btn-circle">
+                        <button class="btn btn-ghost btn-circle tooltip" data-tip="Add Friends">
                           <i class="fa-solid fa-user-plus"></i>
                         </button>
-                        <button class="btn btn-ghost btn-circle">
+                        <button class="btn btn-ghost btn-circle tooltip" data-tip="Bookmarks">
                           <i class="fa-solid fa-flag"></i>
                         </button>
                       </div>
                       <!-- Sign Up -->
-                      <button class="btn btn-primary bg-[#797DFC] px-10 rounded-full text-white font-bold text-xl hidden lg:inline-block">Sign Up</button>
+                      <button class="btn btn-primary bg-[#797DFC] px-10 rounded-full text-white font-bold text-xl hidden lg:inline-block border-none">Sign Up</button>
                       <!-- Sign Up -->
                 </div>
               </div>
@@ -70,7 +70,34 @@
         <!-- nav section ends -->
 
     </header>
-    <main></main>
+    <main class="container mx-auto w-[95%] mt-12">
+        <!-- Banner Section Starts -->
+
+        <div class="hero h-[400px] rounded-3xl" style="background-image: url(images/bgbanner.png);">
+            <div class="hero-overlay bg-opacity-60 rounded-3xl"></div>
+            <div id="banner-content-container" class="flex w-full p-24 gap-12">
+                <div id="banner-text-container" class="space-y-8 flex-1 w-full">
+                    <h1 class="text-white text-5xl font-extrabold">Welcome to the <br> <span class="text-[#797DFC]">Nostalgia </span> Network</h1>
+                    <p class="text-xl text-[#ffffffcc] font-bold">Share your favorite opinion and win and wp forum coffee mug!</p>
+    
+                    <label class="input input-bordered flex items-center gap-2 rounded-full">
+                        <input type="text" class="grow" placeholder="Search here anything" />
+                        <button class="btn btn-primary bg-[#797DFC] border-none text-white font-bold text-xl px-6 rounded-full">Search</button>
+                      </label>
+                </div>
+                <div id="banner-list-container" class="bg-white flex-1 w-full text-[#12132dcc] text-xl font-semibold p-12 rounded-3xl space-y-6 ">
+                    <div class="flex justify-between "><h2>Registered User</h2><h2>01</h2></div>
+                    <div class="flex justify-between "><h2>Forum</h2><h2>05</h2></div>
+                    <div class="flex justify-between "><h2>Topics</h2><h2>02</h2></div>
+                    <div class="flex justify-between "><h2>Replies</h2><h2>01</h2></div>
+
+
+                </div>
+            </div>
+          </div>
+        <!-- Banner Section Ends -->
+
+    </main>
     <footer></footer>
   </body>
 </html>
