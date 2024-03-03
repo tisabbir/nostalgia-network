@@ -4,7 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- font awesome setup -->
-    <script src="https://kit.fontawesome.com/9f932a9fd0.js" crossorigin="anonymous"></script>
+    <script
+      src="https://kit.fontawesome.com/9f932a9fd0.js"
+      crossorigin="anonymous"
+    ></script>
     <!-- font awesome setup -->
 
     <!-- Daisy + Tailwind -->
@@ -16,96 +19,166 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- Daisy + Tailwind -->
 
-    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/style.css" />
     <title>Nostalgia Network</title>
   </head>
   <body>
     <header>
-        <!-- nav section starts -->
-        <nav class="container mx-auto w-[95%] mt-4 lg:mt-8">
-            <div class="navbar bg-base-100 flex justify-between items-center">
-                <!-- burger icon start -->
-                <div class="navbar-start inline-block lg:hidden">
-                    <div class="dropdown">
-                      <div tabindex="0" role="button" class="btn btn-ghost btn-circle tooltip" data-tip="menu">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h7" /></svg>
-                      </div>
-                      <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
-                        <li><a>Homepage</a></li>
-                        <li><a>Post</a></li>
-                        <li><a>Add Friends</a></li>
-                        <li><a>Bookmark</a></li>
-                        <li><a>Sign Up</a></li>
-                      </ul>
-                    </div>
-                  </div>
-                <!-- burger icon ends -->
-                <!-- nostalgia -->
-                <div class="">
-                    <a class="btn btn-ghost text-xl lg:text-4xl text-[#12132D] font-extrabold">Nostalgia Network</a>
-                </div>
-                <!-- nostalgia -->
-
-                <div class="space-x-4">
-                    <div id="btn-container" class="hidden lg:inline-block">
-                        <button class="btn btn-ghost btn-circle tooltip" data-tip="Home">
-                          <i class="fa-solid fa-house"></i>
-                        </button>
-                        <button class="btn btn-ghost btn-circle tooltip" data-tip="Post">
-                              <i class="fa-solid fa-pencil"></i>
-                        </button>
-                        <button class="btn btn-ghost btn-circle tooltip" data-tip="Add Friends">
-                          <i class="fa-solid fa-user-plus"></i>
-                        </button>
-                        <button class="btn btn-ghost btn-circle tooltip" data-tip="Bookmarks">
-                          <i class="fa-solid fa-flag"></i>
-                        </button>
-                      </div>
-                      <!-- Sign Up -->
-                      <button class="btn btn-primary bg-[#797DFC] px-10 rounded-full text-white font-bold text-xl hidden lg:inline-block border-none">Sign Up</button>
-                      <!-- Sign Up -->
-                </div>
+      <!-- nav section starts -->
+      <nav class="container mx-auto w-[95%] mt-4 lg:mt-8">
+        <div class="navbar bg-base-100 flex justify-between items-center">
+          <!-- burger icon start -->
+          <div class="navbar-start inline-block lg:hidden">
+            <div class="dropdown">
+              <div
+                tabindex="0"
+                role="button"
+                class="btn btn-ghost btn-circle tooltip"
+                data-tip="menu"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-5 w-5"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M4 6h16M4 12h16M4 18h7"
+                  />
+                </svg>
               </div>
-        </nav>
-        <!-- nav section ends -->
-
-    </header>
-    <main class="container mx-auto w-[95%] mt-4 lg:mt-12">
-        <!-- Banner Section Starts -->
-
-        <div class="hero h-[400px] rounded-3xl" style="background-image: url(images/bgbanner.png);">
-            <div class="hero-overlay bg-[#12132D] bg-opacity-60 rounded-3xl"></div>
-            <div id="banner-content-container" class="flex flex-col lg:flex-row w-full p-4 lg:p-24 gap-12">
-                <div id="banner-text-container" class="space-y-8 flex-1 w-full">
-                    <h1 class="text-white text-3xl lg:text-5xl font-extrabold">Welcome to the <br> <span class="text-[#797DFC]">Nostalgia </span> Network</h1>
-                    <p class="text-xl text-[#ffffffcc] font-bold">Share your favorite opinion and win and nn forum coffee mug!</p>
-    
-                    <label class="input input-bordered flex items-center gap-2 rounded-full">
-                        <input type="text" class="grow" placeholder="Search here anything" />
-                        <button class="btn btn-primary bg-[#797DFC] border-none text-white font-bold text-xl px-6 rounded-full">Search</button>
-                      </label>
-                </div>
-                <div id="banner-list-container" class="bg-white flex-1 w-full text-[#12132dcc] text-xl font-semibold p-12 rounded-3xl space-y-6 ">
-                    <div class="flex justify-between "><h2>Registered User</h2><h2>01</h2></div>
-                    <div class="flex justify-between "><h2>Forum</h2><h2>05</h2></div>
-                    <div class="flex justify-between "><h2>Topics</h2><h2>02</h2></div>
-                    <div class="flex justify-between "><h2>Replies</h2><h2>01</h2></div>
-
-
-                </div>
+              <ul
+                tabindex="0"
+                class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
+              >
+                <li><a>Homepage</a></li>
+                <li><a>Post</a></li>
+                <li><a>Add Friends</a></li>
+                <li><a>Bookmark</a></li>
+                <li><a>Sign Up</a></li>
+              </ul>
             </div>
           </div>
-        <!-- Banner Section Ends -->
+          <!-- burger icon ends -->
+          <!-- nostalgia -->
+          <div class="">
+            <a
+              class="btn btn-ghost text-xl lg:text-4xl text-[#12132D] font-extrabold"
+              >Nostalgia Network</a
+            >
+          </div>
+          <!-- nostalgia -->
 
+          <div class="space-x-4">
+            <div id="btn-container" class="hidden lg:inline-block">
+              <button class="btn btn-ghost btn-circle tooltip" data-tip="Home">
+                <i class="fa-solid fa-house"></i>
+              </button>
+              <button class="btn btn-ghost btn-circle tooltip" data-tip="Post">
+                <i class="fa-solid fa-pencil"></i>
+              </button>
+              <button
+                class="btn btn-ghost btn-circle tooltip"
+                data-tip="Add Friends"
+              >
+                <i class="fa-solid fa-user-plus"></i>
+              </button>
+              <button
+                class="btn btn-ghost btn-circle tooltip"
+                data-tip="Bookmarks"
+              >
+                <i class="fa-solid fa-flag"></i>
+              </button>
+            </div>
+            <!-- Sign Up -->
+            <button
+              class="btn btn-primary bg-[#797DFC] px-10 rounded-full text-white font-bold text-xl hidden lg:inline-block border-none"
+            >
+              Sign Up
+            </button>
+            <!-- Sign Up -->
+          </div>
+        </div>
+      </nav>
+      <!-- nav section ends -->
+    </header>
+    <main class="container mx-auto w-[95%] mt-4 lg:mt-12">
+      <!-- Banner Section Starts -->
 
-        <!-- Let's Discuss starts -->
-        <section id="let's discuss" class="mt-48 lg:mt-40">
-            <h1 class="section-title">Let's Discuss</h1>
-            <p class="para max-w-[650px] mx-auto mt-6">Engage in lively discussions, share memories, and connect with fellow enthusiasts in our vibrant Let's Discuss section. Join the conversation today!</p>
+      <div
+        class="hero h-[400px] rounded-3xl"
+        style="background-image: url(images/bgbanner.png)"
+      >
+        <div class="hero-overlay bg-[#12132D] bg-opacity-60 rounded-3xl"></div>
+        <div
+          id="banner-content-container"
+          class="flex flex-col lg:flex-row w-full p-4 lg:p-24 gap-12"
+        >
+          <div id="banner-text-container" class="space-y-8 flex-1 w-full">
+            <h1 class="text-white text-3xl lg:text-5xl font-extrabold">
+              Welcome to the <br />
+              <span class="text-[#797DFC]">Nostalgia </span> Network
+            </h1>
+            <p class="text-xl text-[#ffffffcc] font-bold">
+              Share your favorite opinion and win and nn forum coffee mug!
+            </p>
 
-            <div class="content-container mt-12 flex flex-col lg:flex-row gap-6">
-                <div id="discussion-container" class="space-y-4">
-                    <!-- <div id="discussion" class="flex gap-6 bg-[#F3F3F5] p-3 lg:p-10 rounded-xl">
+            <label
+              class="input input-bordered flex items-center gap-2 rounded-full"
+            >
+              <input
+                type="text"
+                class="grow"
+                placeholder="Search here anything"
+              />
+              <button
+                class="btn btn-primary bg-[#797DFC] border-none text-white font-bold text-xl px-6 rounded-full"
+              >
+                Search
+              </button>
+            </label>
+          </div>
+          <div
+            id="banner-list-container"
+            class="bg-white flex-1 w-full text-[#12132dcc] text-xl font-semibold p-12 rounded-3xl space-y-6"
+          >
+            <div class="flex justify-between">
+              <h2>Registered User</h2>
+              <h2>01</h2>
+            </div>
+            <div class="flex justify-between">
+              <h2>Forum</h2>
+              <h2>05</h2>
+            </div>
+            <div class="flex justify-between">
+              <h2>Topics</h2>
+              <h2>02</h2>
+            </div>
+            <div class="flex justify-between">
+              <h2>Replies</h2>
+              <h2>01</h2>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Banner Section Ends -->
+
+      <!-- Let's Discuss starts -->
+      <section id="let's discuss" class="mt-48 lg:mt-40">
+        <h1 class="section-title">Let's Discuss</h1>
+        <p class="para max-w-[650px] mx-auto mt-6">
+          Engage in lively discussions, share memories, and connect with fellow
+          enthusiasts in our vibrant Let's Discuss section. Join the
+          conversation today!
+        </p>
+
+        <div class="content-container mt-12 flex flex-col lg:flex-row gap-6">
+          <div id="discussion-container" class="space-y-4">
+            <!-- <div id="discussion" class="flex gap-6 bg-[#F3F3F5] p-3 lg:p-10 rounded-xl">
 
                         <div id="profile-picture" class="relative"><img class="w-20 rounded-xl" src="https://i.ibb.co/pjM6Ybr/pexels-anastasia-shuraeva-9607206.jpg" alt="">
                             <i id="active-status" class="absolute -top-2 -right-2 fa-regular fa-circle bg-green-600 rounded-full"></i>
@@ -131,25 +204,62 @@
                             </div>
                         </div>
                     </div> -->
-                </div>
+          </div>
 
-                <div id="title-container" class="bg-[#12132d0d] p-2 lg:p-6 rounded-2xl ">
+          <div
+            id="title-container"
+            class="bg-[#12132d0d] p-2 lg:p-6 rounded-2xl"
+          >
+            <div class="flex w-96 justify-between">
+              <h1 class="text-[#12132D] font-bold text-xl">Title</h1>
+              <p>
+                <i
+                  class="fa-solid fa-check-double bg-green-400 rounded-full"
+                ></i>
+                Mark as read (<span id="mark-as-read">0</span>)
+              </p>
+            </div>
 
-                    <div class="flex w-96 justify-between "><h1 class="text-[#12132D] font-bold text-xl">Title</h1> <p> <i class="fa-solid fa-check-double bg-green-400 rounded-full"></i> Mark as read (<span id="mark-as-read">0</span>)</p></div>
-
-                    <div class="title-container flex items-center bg-white rounded-2xl p-4 mt-4">
+            <!-- <div class="title-container flex items-center bg-white rounded-2xl p-4 mt-4">
                         <h1>10 Kids Unaware of Their Halloween Costume</h1>
                         <div class="flex gap-2 items-center">
                             <i class="fa-regular fa-eye"></i>
                             <p>1568</p>
                         </div>
-                    </div>
+                    </div> -->
+          </div>
+        </div>
+      </section>
+      <!-- Let's Discuss ends -->
 
-                </div>
-            </div>
 
-        </section>
-        <!-- Let's Discuss ends -->
+      <!-- join our forum starts -->
+
+      <div
+        class="hero h-[400px] rounded-3xl mt-12"
+        style="background-image: url(images/bg-banner.png)"
+      >
+        <!-- <div class="hero-overlay bg-[#12132D] bg-opacity-60 rounded-3xl"></div> -->
+        <div
+          id="banner-content-container"
+          class="flex flex-col lg:flex-row w-full p-4 lg:p-24 gap-12"
+        >
+          <div id="banner-text-container" class="space-y-8 flex-1 w-full">
+            <h1 class="text-white text-3xl lg:text-5xl font-extrabold">
+              Join Our Forum
+            </h1>
+            <p class="text-xl text-[#ffffff] font-semibold">
+              Join the most exciting forum over the internet. Feel the joy of connectedness.
+            </p>
+
+            <button class="btn btn-ghost bg-blue-500 px-6 text-white font-bold">Register Now</button>
+          </div>
+          <div>
+            <img class="h-70 w-60" src="images/joinforum.png" alt="">
+          </div>
+        </div>
+      </div>
+      <!-- join our forum ends -->
     </main>
     <footer></footer>
 
