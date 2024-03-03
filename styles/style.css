@@ -37,3 +37,8 @@
 footer{
   background: linear-gradient(180deg, rgba(18, 19, 45, 0.05) 0%, rgba(18, 19, 45, 0.00) 100%);
 }
+
+#banner{
+  background-color: #12132D;
+  opacity: 100%;
+}
