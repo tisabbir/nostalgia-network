@@ -3,6 +3,9 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- font awesome setup -->
+    <script src="https://kit.fontawesome.com/9f932a9fd0.js" crossorigin="anonymous"></script>
+    <!-- font awesome setup -->
 
     <!-- Daisy + Tailwind -->
     <link
@@ -17,7 +20,56 @@
     <title>Nostalgia Network</title>
   </head>
   <body>
-    <header></header>
+    <header>
+        <!-- nav section starts -->
+        <nav class="container mx-auto">
+            <div class="navbar bg-base-100 flex justify-between">
+                <!-- burger icon start -->
+                <div class="navbar-start inline-block lg:hidden">
+                    <div class="dropdown">
+                      <div tabindex="0" role="button" class="btn btn-ghost btn-circle">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h7" /></svg>
+                      </div>
+                      <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                        <li><a>Homepage</a></li>
+                        <li><a>Post</a></li>
+                        <li><a>Add Friends</a></li>
+                        <li><a>Bookmark</a></li>
+                        <li><a>Sign Up</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                <!-- burger icon ends -->
+                <!-- nostalgia -->
+                <div class="">
+                    <a class="btn btn-ghost text-xl">Nostalgia Network</a>
+                </div>
+                <!-- nostalgia -->
+
+                <div class="space-x-4">
+                    <div id="btn-container" class="hidden lg:inline-block">
+                        <button class="btn btn-ghost btn-circle">
+                          <i class="fa-solid fa-house"></i>
+                        </button>
+                        <button class="btn btn-ghost btn-circle">
+                              <i class="fa-solid fa-pencil"></i>
+                        </button>
+                        <button class="btn btn-ghost btn-circle">
+                          <i class="fa-solid fa-user-plus"></i>
+                        </button>
+                        <button class="btn btn-ghost btn-circle">
+                          <i class="fa-solid fa-flag"></i>
+                        </button>
+                      </div>
+                      <!-- Sign Up -->
+                      <button class="btn btn-primary bg-[#797DFC] px-10 rounded-full text-white font-bold text-xl hidden lg:inline-block">Sign Up</button>
+                      <!-- Sign Up -->
+                </div>
+              </div>
+        </nav>
+        <!-- nav section ends -->
+
+    </header>
     <main></main>
     <footer></footer>
   </body>

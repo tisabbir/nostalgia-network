@@ -9,3 +9,12 @@
   .inter {
     font-family: "Inter", sans-serif;
   }
+
+/* Font Section ends */
+
+/* Common Styles */
+
+* {
+    font-family: "Mulish", sans-serif;
+    box-sizing: border-box;
+}
