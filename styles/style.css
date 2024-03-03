@@ -33,3 +33,7 @@
   font-size: 18px;
   font-weight: 400;
 }
+
+footer{
+  background: linear-gradient(180deg, rgba(18, 19, 45, 0.05) 0%, rgba(18, 19, 45, 0.00) 100%);
+}
