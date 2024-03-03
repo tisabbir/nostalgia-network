@@ -51,19 +51,15 @@ getData(loadPosts, checkActive);
 
 function checkActive(posts) {
   const discussion = document.querySelectorAll("#discussion");
-  console.log(discussion, "discussion");
   let activeBtns = [];
   discussion.forEach((item) => {
-    console.log(item.querySelector("#active-status"));
     let activeBtn = item.querySelector("#active-status");
     activeBtns.push(activeBtn);  
   });
-  console.log(activeBtns)
 
   let a = 0;
   posts.forEach(post => {
     if(post.isActive){
-       console.log(activeBtns[a], 'true');
 
        activeBtns[a].classList.add('bg-green-400')
        a++;

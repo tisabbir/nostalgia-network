@@ -255,16 +255,54 @@
             <button class="btn btn-ghost bg-blue-500 px-6 text-white font-bold">Register Now</button>
           </div>
           <div>
-            <img class="h-70 w-60" src="images/joinforum.png" alt="">
+            <img class="h-70 w-60 hidden lg:block" src="images/joinforum.png" alt="">
           </div>
         </div>
       </div>
       <!-- join our forum ends -->
+
+      <!-- Latest Post section starts -->
+      <section class="mt-12">
+        <h1 class="section-title">Let's Discuss</h1>
+        <p class="para max-w-[650px] mx-auto mt-6">
+          Engage in lively discussions, share memories, and connect with fellow
+          enthusiasts in our vibrant Let's Discuss section. Join the
+          conversation today!
+        </p>
+
+
+        <!-- card container s -->
+
+            <div id="cardContainer" class="grid grid-cols-1 lg:grid-cols-3 mt-12">
+
+                <div id="card" class="border-2 border-solid rounded-3xl p-1 lg:p-4 border-[#12132d26] space-y-6">
+                    <img class="max-w-full rounded-2xl mx-auto" src="https://i.ibb.co/VYGSkLz/pexels-jeshootscom-442576.jpg" alt="">
+                    <div class="flex items-center gap-3">
+                        <i class="fa-regular fa-calendar-days"></i>
+                        <p>29 January 2024</p>
+                    </div>
+                    <h1 class="text-[#12132D] text-lg lg:text-xl font-extrabold">What will a mars habitat force that impact in our daily life!!!</h1>
+                    <p class="para text-left">Yes, you can run unit tests and view the results directly within the app. </p>
+
+                    <div class="flex gap-4 items-center">
+                        <img class="w-8 h-8 rounded-full" src="https://i.ibb.co/z8zx95w/pexels-davide-de-giovanni-1649675.jpg" alt="">
+                        <div>
+                            <h1 class="text-[#12132D] text-lg font-extrabold" >Author name</h1>
+                            <p class="para text-sm text-left">Designation</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        <!-- card container e -->
+      </section>
+
+      <!-- Latest Post section ends -->
     </main>
     <footer></footer>
 
     <!-- Script Files -->
     <script src="js/index.js"></script>
-    <script src="js/active-checker.js"></script>
+    <script src="js/load-cards.js"></script>
   </body>
 </html>
