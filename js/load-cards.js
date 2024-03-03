@@ -1,7 +1,6 @@
 const loadCards = async()=>{
  const response = await fetch('https://openapi.programming-hero.com/api/retro-forum/latest-posts');
  const data = await response.json();
- console.log(data[0].cover_image)
 
  const cardContainer = document.getElementById('cardContainer');
 
